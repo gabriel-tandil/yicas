@@ -1,0 +1,764 @@
+support.o: support.c ../config.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/sys/types.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/_mingw.h \
+  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/sys/stat.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/unistd.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/io.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/stdint.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/process.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/getopt.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/string.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/stdio.h \
+  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtk.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdk.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcairo.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcolor.h \
+  /cygdrive/c/GTK/include/cairo/cairo.h \
+  /cygdrive/c/GTK/include/cairo/cairo-features.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdktypes.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/galloca.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gtypes.h \
+  /cygdrive/c/GTK/lib/glib-2.0/include/glibconfig.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmacros.h \
+  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/limits.h \
+  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/syslimits.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/limits.h \
+  /usr/lib/gcc/i686-pc-cygwin/3.4.4/include/float.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/garray.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gasyncqueue.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gthread.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gerror.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gquark.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gatomic.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gbacktrace.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gbase64.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gbookmarkfile.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/time.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gcache.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/glist.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmem.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gslice.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gcompletion.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gconvert.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gdataset.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gdate.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gdir.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gfileutils.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/ghash.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/ghook.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/giochannel.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmain.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gslist.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gstring.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gunicode.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gutils.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gkeyfile.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmappedfile.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmarkup.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gmessages.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gnode.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/goption.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gpattern.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gprimes.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gqsort.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gqueue.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/grand.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/grel.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gscanner.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gshell.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gspawn.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gstrfuncs.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gthreadpool.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gtimer.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gtree.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib/gwin32.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-attributes.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-font.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-coverage.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-types.h \
+  /cygdrive/c/GTK/include/glib-2.0/glib-object.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gboxed.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gtype.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/genums.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gobject.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gvalue.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gparam.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gclosure.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gsignal.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gmarshal.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gparamspecs.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gsourceclosure.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gtypemodule.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gtypeplugin.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gvaluearray.h \
+  /cygdrive/c/GTK/include/glib-2.0/gobject/gvaluetypes.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-matrix.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-script.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-gravity.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-break.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-item.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-context.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-fontmap.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-fontset.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-engine.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-glyph.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-enum-types.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-features.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-glyph-item.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-layout.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-tabs.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-renderer.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pango-utils.h \
+  /cygdrive/c/GTK/lib/gtk-2.0/include/gdkconfig.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpixbuf.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkrgb.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-features.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-core.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-transform.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-animation.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-io.h \
+  /cygdrive/c/GTK/include/glib-2.0/gmodule.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-loader.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h \
+  /cygdrive/c/GTK/include/pango-1.0/pango/pangocairo.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcursor.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdisplay.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkevents.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdnd.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkinput.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdrawable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkgc.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkenumtypes.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkfont.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkimage.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkkeys.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdisplaymanager.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpango.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpixmap.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkproperty.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkregion.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkscreen.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkselection.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkspawn.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkvisual.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gdk/gdkwindow.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaboutdialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwindow.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccelgroup.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkenums.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbin.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcontainer.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwidget.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkobject.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktypeutils.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktypebuiltins.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdebug.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkadjustment.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstyle.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtksettings.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrc.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkobject.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkstate.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkrelationtype.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccellabel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtklabel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmisc.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenu.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenushell.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccelmap.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccessible.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atk.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkaction.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkcomponent.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkutil.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkdocument.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkeditabletext.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atktext.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkgobjectaccessible.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkhyperlink.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkhyperlinkimpl.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkhypertext.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkimage.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atknoopobject.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atknoopobjectfactory.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkobjectfactory.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkregistry.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkobjectfactory.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkrelation.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkrelationset.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkselection.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkstateset.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkstreamablecontent.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atktable.h \
+  /cygdrive/c/GTK/include/atk-1.0/atk/atkvalue.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaction.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkactiongroup.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkitemfactory.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkalignment.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkarrow.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaspectframe.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkframe.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkassistant.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbindings.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimage.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcalendar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtksignal.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmarshal.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcelllayout.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderer.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcelleditable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeviewcolumn.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreesortable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendereraccel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderercombo.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererpixbuf.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererprogress.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererspin.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertoggle.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcheckbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktogglebutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcheckmenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkclipboard.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkselection.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextiter.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktexttag.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextchild.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkclist.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhscrollbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscrollbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrange.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvscrollbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorsel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorseldialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcombo.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcombobox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdnd.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkentry.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkeditable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimcontext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkentrycompletion.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkliststore.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodelfilter.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcomboboxentry.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkctree.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcurve.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdrawingarea.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkeventbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkexpander.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilesel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfixed.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooser.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilefilter.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserdialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooser.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserwidget.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfontbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfontsel.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkgamma.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkgc.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhandlebox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhbbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhpaned.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpaned.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhruler.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkruler.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhscale.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscale.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhseparator.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparator.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkiconfactory.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkicontheme.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkiconview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimagemenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimcontextsimple.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimmulticontext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkinputdialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkinvisible.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtklayout.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtklinkbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtklist.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtklistitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmain.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenubar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenutoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenu.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktooltips.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmessagedialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmodules.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtknotebook.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkoldeditable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkoptionmenu.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpixmap.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkplug.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtksocket.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpreview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintoperation.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmain.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkenums.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwindow.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpagesetup.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpapersize.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintsettings.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintcontext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintoperationpreview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprogress.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprogressbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradioaction.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggleaction.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiobutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiomenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiotoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggletoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooser.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentmanager.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentfilter.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooserdialog.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooser.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchoosermenu.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooserwidget.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentfilter.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentmanager.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscrolledwindow.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkviewport.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparatormenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparatortoolitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtksizegroup.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkspinbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstatusbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstatusicon.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstock.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktearoffmenuitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextbuffer.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktexttagtable.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextmark.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextbufferrichtext.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextview.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktipsquery.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggletoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbar.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktree.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreednd.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeitem.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodelsort.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeselection.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreestore.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkuimanager.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvbbox.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkversion.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvpaned.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvruler.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvscale.h \
+  /cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvseparator.h support.h \
+  /cygdrive/c/GTK/include/libintl.h \
+  /usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/locale.h
+support.c :
+../config.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/sys/types.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/_mingw.h :
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/sys/stat.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/unistd.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/io.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/stdint.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/process.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/getopt.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/string.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/stdio.h :
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stdarg.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtk.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdk.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcairo.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcolor.h :
+/cygdrive/c/GTK/include/cairo/cairo.h :
+/cygdrive/c/GTK/include/cairo/cairo-features.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdktypes.h :
+/cygdrive/c/GTK/include/glib-2.0/glib.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/galloca.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gtypes.h :
+/cygdrive/c/GTK/lib/glib-2.0/include/glibconfig.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmacros.h :
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/limits.h :
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/syslimits.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/limits.h :
+/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/float.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/garray.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gasyncqueue.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gthread.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gerror.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gquark.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gatomic.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gbacktrace.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gbase64.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gbookmarkfile.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/time.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gcache.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/glist.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmem.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gslice.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gcompletion.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gconvert.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gdataset.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gdate.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gdir.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gfileutils.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/ghash.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/ghook.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/giochannel.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmain.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gslist.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gstring.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gunicode.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gutils.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gkeyfile.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmappedfile.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmarkup.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gmessages.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gnode.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/goption.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gpattern.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gprimes.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gqsort.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gqueue.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/grand.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/grel.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gscanner.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gshell.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gspawn.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gstrfuncs.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gthreadpool.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gtimer.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gtree.h :
+/cygdrive/c/GTK/include/glib-2.0/glib/gwin32.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-attributes.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-font.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-coverage.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-types.h :
+/cygdrive/c/GTK/include/glib-2.0/glib-object.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gboxed.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gtype.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/genums.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gobject.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gvalue.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gparam.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gclosure.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gsignal.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gmarshal.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gparamspecs.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gsourceclosure.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gtypemodule.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gtypeplugin.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gvaluearray.h :
+/cygdrive/c/GTK/include/glib-2.0/gobject/gvaluetypes.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-matrix.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-script.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-gravity.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-break.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-item.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-context.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-fontmap.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-fontset.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-engine.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-glyph.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-enum-types.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-features.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-glyph-item.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-layout.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-tabs.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-renderer.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pango-utils.h :
+/cygdrive/c/GTK/lib/gtk-2.0/include/gdkconfig.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpixbuf.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkrgb.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-features.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-core.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-transform.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-animation.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-io.h :
+/cygdrive/c/GTK/include/glib-2.0/gmodule.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-loader.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h :
+/cygdrive/c/GTK/include/pango-1.0/pango/pangocairo.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkcursor.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdisplay.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkevents.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdnd.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkinput.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdrawable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkgc.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkenumtypes.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkfont.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkimage.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkkeys.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkdisplaymanager.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpango.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkpixmap.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkproperty.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkregion.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkscreen.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkselection.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkspawn.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkvisual.h :
+/cygdrive/c/GTK/include/gtk-2.0/gdk/gdkwindow.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaboutdialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwindow.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccelgroup.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkenums.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbin.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcontainer.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwidget.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkobject.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktypeutils.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktypebuiltins.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdebug.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkadjustment.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstyle.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtksettings.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrc.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkobject.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkstate.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkrelationtype.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccellabel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtklabel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmisc.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenu.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenushell.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccelmap.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaccessible.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atk.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkaction.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkcomponent.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkutil.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkdocument.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkeditabletext.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atktext.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkgobjectaccessible.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkhyperlink.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkhyperlinkimpl.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkhypertext.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkimage.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atknoopobject.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atknoopobjectfactory.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkobjectfactory.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkregistry.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkobjectfactory.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkrelation.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkrelationset.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkselection.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkstateset.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkstreamablecontent.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atktable.h :
+/cygdrive/c/GTK/include/atk-1.0/atk/atkvalue.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaction.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkactiongroup.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkitemfactory.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkalignment.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkarrow.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkaspectframe.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkframe.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkassistant.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbindings.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimage.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcalendar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtksignal.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmarshal.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcelllayout.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderer.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcelleditable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeviewcolumn.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreesortable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendereraccel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderercombo.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererpixbuf.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererprogress.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrendererspin.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellrenderertoggle.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcellview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcheckbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktogglebutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcheckmenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkclipboard.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkselection.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextiter.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktexttag.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextchild.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkclist.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhscrollbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscrollbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrange.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvscrollbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorsel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcolorseldialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcombo.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcombobox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdnd.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkentry.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkeditable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimcontext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkentrycompletion.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkliststore.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodelfilter.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcomboboxentry.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkctree.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkcurve.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkdrawingarea.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkeventbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkexpander.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilesel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfixed.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooser.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilefilter.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserdialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooser.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfilechooserwidget.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfontbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkfontsel.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkgamma.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkgc.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhandlebox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhbbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhpaned.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpaned.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhruler.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkruler.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhscale.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscale.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkhseparator.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparator.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkiconfactory.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkicontheme.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkiconview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimagemenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimcontextsimple.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkimmulticontext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkinputdialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkinvisible.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtklayout.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtklinkbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtklist.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtklistitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmain.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenubar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenutoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmenu.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktooltips.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmessagedialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmodules.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtknotebook.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkoldeditable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkoptionmenu.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpixmap.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkplug.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtksocket.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpreview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintoperation.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkmain.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkenums.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkwindow.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpagesetup.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkpapersize.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintsettings.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintcontext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprintoperationpreview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprogress.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkprogressbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradioaction.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggleaction.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiobutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiomenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkradiotoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggletoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooser.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentmanager.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentfilter.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooserdialog.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooser.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchoosermenu.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentchooserwidget.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentfilter.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkrecentmanager.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkscrolledwindow.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkviewport.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparatormenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkseparatortoolitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtksizegroup.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkspinbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstatusbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstatusicon.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkstock.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktearoffmenuitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextbuffer.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktexttagtable.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextmark.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextbufferrichtext.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktextview.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktipsquery.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoggletoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbar.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolbutton.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktoolitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktree.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreednd.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeitem.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreemodelsort.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreeselection.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtktreestore.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkuimanager.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvbbox.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkversion.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvpaned.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvruler.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvscale.h :
+/cygdrive/c/GTK/include/gtk-2.0/gtk/gtkvseparator.h :
+support.h :
+/cygdrive/c/GTK/include/libintl.h :
+/usr/lib/gcc/i686-pc-mingw32/3.4.4/../../../../i686-pc-mingw32/include/locale.h :
